@@ -5,10 +5,9 @@ import { initKafka } from '../kafka/kafka-config';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Initialize Kafka
   await initKafka();
 
-  await app.listen(3000); // Update with your port
+  await app.listen(3000);
   console.log('Application is running on: http://localhost:3000');
 }
 bootstrap();

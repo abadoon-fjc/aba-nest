@@ -2,7 +2,7 @@ import { IsEmail, IsOptional, IsString, IsNumber } from 'class-validator';
 
 export class UpdateUserDto {
   @IsString()
-  readonly userId: string; // Обязательное поле
+  readonly userId: string; 
 
   @IsOptional()
   @IsString()
@@ -21,21 +21,21 @@ export class UpdateUserDto {
   readonly password?: string;
 
   @IsNumber()
-  counter: number; // Обязательное поле
+  counter: number;
 
   @IsNumber()
-  dailyClicks: number; // Обязательное поле
+  dailyClicks: number;
 
   @IsNumber()
-  totalClicks: number; // Обязательное поле
+  totalClicks: number;
 }
 
 export class UpdateTaskDto {
   @IsString()
-  userId: string; // Обязательное поле
+  userId: string;
 
   @IsString()
-  taskId: string; // Обязательное поле
+  taskId: string;
 
   @IsString()
   taskDescription: string;
@@ -44,8 +44,8 @@ export class UpdateTaskDto {
   taskProgress: number;
 
   @IsString()
-  status: string; // Обязательное поле
+  status: string;
 
   @IsString()
-  timestamp: string; // Обязательное поле
+  timestamp: string;
 }
